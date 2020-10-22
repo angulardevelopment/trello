@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
-DEMO: [https://a2gtm.herokuapp.com/](Link)
+DEMO: [https://sunny7899.github.io/task-manager/](Link)
 
 ## Development server
 
