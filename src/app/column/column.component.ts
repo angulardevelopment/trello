@@ -3,8 +3,7 @@ import {Column} from './column';
 import {Card} from '../card/card';
 import {CardService} from '../card/card.service';
 import { BoardService } from '../board/board.service';
-
-// declare var jQuery: any;
+import {moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-gtm-column',
@@ -34,6 +33,9 @@ export class ColumnComponent implements OnInit {
 
   }
 
+  drop(event) {
+    moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
+  }
   addColumnOnEnter(event) {
     if (event.keyCode === 13) {
       this.updateColumn();

@@ -16,10 +16,7 @@ import { BoardComponent } from './board/board.component';
 import { ColumnComponent } from './column/column.component';
 import { CardComponent } from './card/card.component';
 
-// PIPES
-import { OrderBy } from './pipes/orderby.pipe';
-
-
+import {DragDropModule} from '@angular/cdk/drag-drop';
 const appRoutes: Routes = [
   { path: 'b/:id', component: BoardComponent },
   { path: '', component: DashboardComponent },
@@ -32,12 +29,12 @@ const appRoutes: Routes = [
     BoardComponent,
     ColumnComponent,
     CardComponent,
-    OrderBy,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    DragDropModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [BoardService, CardService, HtpInterceptor],

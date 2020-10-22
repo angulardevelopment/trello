@@ -21,7 +21,7 @@
 </div>
 
 <section *ngIf="board" id="main" >
-  <div *ngFor="let column of board.columns | orderBy : 'order'" class="sortable-column">
+  <div *ngFor="let column of board.columns" class="sortable-column">
     <app-gtm-column [column]="column"
         (addNewCard)="addCard($event)"
         [cards]="board.cards"
