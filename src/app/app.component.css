@@ -1,0 +1,108 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+nav {
+  background-color: #0067A3;
+  padding: 5px;
+  height: 30px;
+}
+
+nav a {
+  float: left;  
+  color: white; 
+}
+
+nav a.btn {
+  background-color:#4590BC;
+  width: 80px;
+}
+
+nav a.logo{
+  line-height: 30px;
+  font-weight: bold;
+  color:#7FB2D1;
+  width: calc(100% - 200px);
+  text-align: center;
+  /*margin-top: -30px;*/
+}
+
+
+#content-wrapper {
+  width: 100%;
+  display: block;
+  height: calc(100% - 40px);
+  /*overflow: auto;*/
+  padding-top: 40px;
+}
+
+#disclaimer {
+  width: 80%;
+  margin: auto;
+  background-color: #eee;
+  padding: 15px;
+}
+
+#disclaimer h1 {
+  margin: 0;
+  text-decoration: underline;
+}
+
+#disclaimer .red {
+  color: red;
+}
+
+#disclaimer #closeButton {
+  float: right;
+  cursor: pointer;
+  cursor: hand;
+  text-decoration: none;
+}
+
+.background-blur {
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  z-index: 999999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+.loader-div {
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+}
+
+.loader {
+  border: 16px solid #b1bede;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,116 @@
+
+#main {
+  min-width: 100%;
+  /*height: calc(100% - 90px);*/
+  overflow: hidden;
+}
+
+.board-title {
+  margin-left: 18px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.board-title span {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.board-title input {
+    margin: -3px -2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-column {
+  width: 280px;
+  height: 40px;
+  background-color: #0067A3;
+  border-radius: 3px; 
+  width: 270px;
+  margin-left: 10px;
+  padding: 2px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.add-column span {
+	color: rgba(255,255,255,.7);
+	line-height: 40px;
+	vertical-align: middle;
+	padding: 7px;
+	font-size: 14px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.add-column input {	
+	width: 100%;
+	height: 100%;
+	font-weight: 700;
+	border: none;
+	line-height: 18px;
+	padding: 3px 5px 4px 5px;
+}
+
+
+.dropdown-check-list {
+  display: inline-block;
+}
+
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-check-list .anchor:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.dropdown-check-list .anchor:active:after {
+  right: 8px;
+  top: 21%;
+}
+
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
+
+.dropdown-check-list.visible .anchor {
+  color: #0094ff;
+}
+
+.dropdown-check-list.visible .items {
+  display: block;
+}
